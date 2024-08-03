@@ -57,12 +57,12 @@ export default function GalleryPage() {
         <h1 className="hidden">Gallery</h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
           {galleryData.map((item, index) => (
-            <Image
-              alt={item.alt}
-              src={item.src}
-              key={index}
-              className="rounded-lg"
-            />
+            <div className="relative group rounded-lg overflow-hidden">
+              <Image alt={item.alt} src={item.src} key={index} />
+              <div className="absolute bottom-0 left-0 p-4 bg-gradient-to-t from-whiteComponentBackground/10 via-whiteComponentBackground/0 to-whiteComponentBackground/0  backdrop-blur-sm w-full opacity-0 group-hover:opacity-100 transition-all duration-200">
+                <p className="">{item.description}</p>
+              </div>
+            </div>
           ))}
         </div>
         <button
