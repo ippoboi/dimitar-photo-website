@@ -16,9 +16,9 @@ export default function Home() {
         <div className="space-y-4">
           <h1 className="text-2xl font-bold">My name is Dimitar Dimitrov</h1>
           <p className="">
-            I'm currently an Engineer Student in Business Intelligence working
-            in a Big Telecom company as a Data Analyst, while building my Design
-            & Development Agency{" "}
+            I&apos;sm currently an Engineer Student in Business Intelligence
+            working in a Big Telecom company as a Data Analyst, while building
+            my Design & Development Agency{" "}
             <a href="https://www.amystlabs.com">Amyst Labs</a>.
           </p>
           <p>
