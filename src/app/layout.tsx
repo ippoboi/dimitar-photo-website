@@ -1,7 +1,7 @@
-import type { Metadata } from "next";
-import { Montserrat } from "next/font/google";
 import { GeistMono } from "geist/font/mono";
+import type { Metadata } from "next";
 
+import NavigationBarComponent from "../../components/navigationBar";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -16,7 +16,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={GeistMono.className}>{children}</body>
+      <body className={GeistMono.className}>
+        {/* <NavigationBarComponent /> */}
+        {children}
+      </body>
     </html>
   );
 }
