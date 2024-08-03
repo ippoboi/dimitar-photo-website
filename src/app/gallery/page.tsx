@@ -119,7 +119,7 @@ export default function GalleryPage() {
             isRow
               ? "flex-row space-x-2 h-16 items-end"
               : "flex-col space-y-2 w-16 items-start"
-          }  bottom-20 left-1/2 transform -translate-x-1/2 fixed bg-whiteComponentBackground border-whiteComponentOutline dark:bg-componentBackground dark:border-componentOutline border rounded-3xl p-2`}
+          }  bottom-10 left-1/2 transform -translate-x-1/2 fixed bg-whiteComponentBackground border-whiteComponentOutline dark:bg-componentBackground dark:border-componentOutline border rounded-3xl p-2`}
         >
           {/* <div
             className={`group flex ${
